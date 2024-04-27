@@ -135,7 +135,7 @@ if (nombre7 == nombreCliente || pase === "vip") {
         console.log("gracias, hasta la proxima");
     }
 }*/
- 
+
 
 console.log("------------ejercicio 8 ---------------");
 
@@ -225,40 +225,62 @@ console.log("-------------------Ejercicio 11 -------------");
 let colores = prompt("ingresa un color")
 
 switch (colores) {
-    case "blanco": 
+    case "blanco":
     case "negro":
         console.log("falta de color");
         break;
-        case "verde": 
-        console.log("el color de la naturaleza"); 
+    case "verde":
+        console.log("el color de la naturaleza");
         break;
-        case "azul": 
-        console.log("el color del agua"); 
+    case "azul":
+        console.log("el color del agua");
         break;
-        case "amarillo": 
-        console.log("el color del sol"); 
+    case "amarillo":
+        console.log("el color del sol");
         break;
-        case "rojo": 
-        console.log("el color del Fuego"); 
+    case "rojo":
+        console.log("el color del Fuego");
         break;
-        case "marron": 
-        case "marròn":
-        console.log("el color de la tierra"); 
+    case "marron":
+    case "marròn":
+        console.log("el color de la tierra");
         break;
-      
+
     default:
         console.log("excelente eleccion, no lo teniamos pensado");
         break;
 }
 console.log("-------------ejercicio 12-----------");
 
-let numeroA = parseInt(prompt("ingrese el primer numero"));
+let numeroA = parseInt(prompt("ingrese el primer numero"))
 let numeroB = parseInt(prompt("ingrese el segundo numero"))
 
-let operacion = ("selecciona una operacion: suma, resta, multiplicacion, division")
+let operacion = prompt("selecciona una operacion: suma, resta, multiplicacion, division")
 
- 
+switch (operacion) {
+    case "suma":
+        suma = numeroA + numeroB
+        console.log("el resultado de la suma es:" + suma);
+        break;
+    case "resta":
+        resta = numeroA - numeroB
+        console.log("el resultado de la resta es:" + resta);
+        break;
+    case "multiplicacion":
+        multiplicacion = numeroA * numeroB
+        console.log("el resultado de la multiplicacion es:" + multiplicacion);
+        break;
+    case "division":
+        division = numeroA / numeroB
 
-
-
+        if (numeroB == 0) {
+            console.log("error, no es posible dividirse en 0");
+        } else {
+            console.log("el resultado de la division es:" + division)
+        }
+        break;
+    default:
+        console.log("por ahora solo tenemos estas operaciones");
+        break;
+}
 
