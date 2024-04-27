@@ -141,7 +141,7 @@ console.log("------------ejercicio 8 ---------------");
 
 //ejercicio 8
 
-let numeroIncognita = 5
+/*let numeroIncognita = 5
 
 let numeroIngresado = parseInt(prompt("ingrese el numero"))
 if (numeroIncognita == numeroIngresado) {
@@ -172,5 +172,93 @@ if (numeroIncognita == numeroIngresado) {
     alert("Felicidades: ganaste!");
 }else{
     alert("Fin del juego. no se permiten mas intentos");
+}*/
+
+//ejercicio 9
+
+console.log("------------------ejercicio 9-----------------");
+
+
+/*let edad = parseInt(prompt("por favor, escriba su edad"))
+let age = "age"
+
+if (edad<=12){
+    parseInt(alert("eres un pequeñin"))
+    
+}else if (edad<=18) {
+    parseInt(alert("eres un adolescente"))
+    
+} else if (edad<=45) {
+    parseInt(alert("eres un mayor joven"))
+} else if (edad<=99) {
+    parseInt(alert("eres un anciano"))
+}else{(edad>=100)
+parseInt(alert("esta seguro que su edad es esa?"))
+}*/
+
+console.log("------------ejercicio 10--------------");
+
+
+/*let jugador1 = prompt("Jugador 1: ingrese piedra, papel o tijera") 
+let jugador2 = prompt("Jugador 2: ingrese piedra, papel o tijera")
+
+if (jugador1 === jugador2) {
+    console.log("hay empate")
+}else if(
+(jugador1 === "piedra" && jugador2 === "tijera")||
+(jugador1 === "papel" && jugador2 === "piedra")||
+(jugador1 === "tijera" && jugador2 === "papel"))
+{
+    alert("gana el jugador 1")
+}else if(
+    (jugador2 === "piedra" && jugador1 === "tijera")||
+(jugador2 === "papel" && jugador1 === "piedra")||
+(jugador2 === "tijera" && jugador1 === "papel"))
+ {
+    alert("gana el jugador 2")
+}else{
+    alert("uno de los jugadores hace trampa")
+} */
+
+console.log("-------------------Ejercicio 11 -------------");
+
+let colores = prompt("ingresa un color")
+
+switch (colores) {
+    case "blanco": 
+    case "negro":
+        console.log("falta de color");
+        break;
+        case "verde": 
+        console.log("el color de la naturaleza"); 
+        break;
+        case "azul": 
+        console.log("el color del agua"); 
+        break;
+        case "amarillo": 
+        console.log("el color del sol"); 
+        break;
+        case "rojo": 
+        console.log("el color del Fuego"); 
+        break;
+        case "marron": 
+        case "marròn":
+        console.log("el color de la tierra"); 
+        break;
+      
+    default:
+        console.log("excelente eleccion, no lo teniamos pensado");
+        break;
 }
+console.log("-------------ejercicio 12-----------");
+
+let numeroA = parseInt(prompt("ingrese el primer numero"));
+let numeroB = parseInt(prompt("ingrese el segundo numero"))
+
+let operacion = ("selecciona una operacion: suma, resta, multiplicacion, division")
+
+ 
+
+
+
 
