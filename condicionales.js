@@ -105,7 +105,7 @@ if (misDatos.edad >= 18 && misDatos.altura >= 1.50 && misDatos.vision >= 8) {
 console.log("---------ejercicio 7--------------");
 //ejercicio 7
 
-/*let nombre7 = "john"
+let nombre7 = "john"
 let pase = prompt("vip o normal")
 let tieneEntrada = prompt("tiene Entrada?(si o no)")
 let nombreCliente = prompt("escriba su nombre")
@@ -134,14 +134,14 @@ if (nombre7 == nombreCliente || pase === "vip") {
     } else {
         console.log("gracias, hasta la proxima");
     }
-}*/
+}
 
 
 console.log("------------ejercicio 8 ---------------");
 
 //ejercicio 8
 
-/*let numeroIncognita = 5
+let numeroIncognita = 5
 
 let numeroIngresado = parseInt(prompt("ingrese el numero"))
 if (numeroIncognita == numeroIngresado) {
@@ -172,14 +172,14 @@ if (numeroIncognita == numeroIngresado) {
     alert("Felicidades: ganaste!");
 }else{
     alert("Fin del juego. no se permiten mas intentos");
-}*/
+}
 
 //ejercicio 9
 
 console.log("------------------ejercicio 9-----------------");
 
 
-/*let edad = parseInt(prompt("por favor, escriba su edad"))
+let edad = parseInt(prompt("por favor, escriba su edad"))
 let age = "age"
 
 if (edad<=12){
@@ -194,12 +194,12 @@ if (edad<=12){
     parseInt(alert("eres un anciano"))
 }else{(edad>=100)
 parseInt(alert("esta seguro que su edad es esa?"))
-}*/
+}
 
 console.log("------------ejercicio 10--------------");
 
 
-/*let jugador1 = prompt("Jugador 1: ingrese piedra, papel o tijera") 
+let jugador1 = prompt("Jugador 1: ingrese piedra, papel o tijera") 
 let jugador2 = prompt("Jugador 2: ingrese piedra, papel o tijera")
 
 if (jugador1 === jugador2) {
@@ -218,7 +218,7 @@ if (jugador1 === jugador2) {
     alert("gana el jugador 2")
 }else{
     alert("uno de los jugadores hace trampa")
-} */
+}
 
 console.log("-------------------Ejercicio 11 -------------");
 
@@ -283,4 +283,48 @@ switch (operacion) {
         console.log("por ahora solo tenemos estas operaciones");
         break;
 }
+console.log("--------------ejercicio 13-------------------------");
 
+//ejercicio 13 
+
+let numeroIdenficacion= parseInt(prompt("esciba su numero de idenficacion"))
+let primerNombre= prompt("esciba su primer nombre ")
+let segundoNombre= prompt("escriba su segundo nombre ")
+let primerApellido= prompt("escriba su primer apellido ")
+let segundoApellido = prompt("escriba su segundo apellido ")
+let fechaNacimiento = prompt("escriba fecha de nacimiento dd/mm/aaaa ")
+let municipioNacimiento = prompt("escriba el Municipio de Nacimiento ")
+let deptoNacimiento = prompt("escriba el Departamento de nacimiento ")
+let estatura = prompt("escriba su estatura")
+let tipoSangre =  parseInt(prompt("escriba su tipo de sangre"))
+let sexo = prompt("escriba su sexo (M / F")
+let fechaExpedicion = prompt("escriba su fecha de expedicion del documento dd/mm/aa")
+let lugarExpedicion = prompt("escriba el lugar de expedicion del documento")
+let deptoExpedicion = prompt("esciba el departamento de expedicion del documento")
+
+
+
+let informacion = confirm("Tu numero de cedula es:" + numeroIdenficacion + "Tu nombre es: "+ primerNombre + segundoNombre + "tus apellidos son:" + primerApellido + segundoApellido + "tu lugar y fecha de nacimiento son: " + municipioNacimiento + fechaNacimiento + "Tu Municipio de Nacimiento Es:" + municipioNacimiento + "tu departamento de nacimiento es: "+ deptoNacimiento +"tu estatura es:" + estatura + "tu tipo de sangre"+tipoSangre+"tu tipo de sexo es:"+sexo+"la fecha de expedicion del documento fue: " +fechaExpedicion+"expedida en"+lugarExpedicion+ "departamento"+ deptoExpedicion+"...LOS DATOS REGISTRADOS SON CORRECTOS?...");     
+
+if (informacion) {
+    let ={
+        numeroIdenficacion: numeroIdenficacion,
+        primerNombre: primerNombre,
+        segundoNombre: segundoNombre,
+        primerApellido: primerApellido,
+        segundoApellido: segundoApellido,
+        municipioNacimiento: municipioNacimiento,
+        deptoNacimiento: deptoNacimiento,
+        fechaNacimiento: fechaNacimiento,
+        estatura: estatura,
+        tipoSangre: tipoSangre,
+        sexo: sexo,
+        fechaExpedicion: fechaExpedicion,
+        lugarExpedicion: lugarExpedicion,
+        deptoExpedicion: deptoExpedicion
+    }
+   console.table(let);
+   console.log("el registro ha sido exitoso");
+}else{
+    console.log("lo sentimos, vuelve a intentarlo en 1 mes");
+}
