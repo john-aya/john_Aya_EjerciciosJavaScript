@@ -11,52 +11,56 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 <body>
+    <div class="d-flex justify-content-around aling-items-center">
+        <div class="d-flex justify-content-center aling-items-center w-50 bg-danger">
+            <div id="entradaysalida"class="d-flex flex-column subtle rounded-4 text-secondary-emphasis">
+                <h1 class="d-flex justify-content-center aling-items-center fs-4 text bg-success">CALCULO DE I.M.C.</h1>
+                <div id="entradainfo">
+                    <form id="entrada">
 
-    
-<div id="entradaysalida" class="d-flex">
-    <div id="entradainfo">
-        <form id="entrada">
+                        <div class="mb-3">
+                            <label for="medida">Estatura</label>
+                            <h1 class="fs-6 text">(en centimetros)</h1>
+                            <input type="number" class="form-control" id="medida" min="0" aria-describedby="emailHelp">
 
-            <div class= "mb-3">
-                <label for="medida">Estatura</label>
-                <h1 class="fs-6 text">en centimetros</h1>
-                <input type="number" class="form-control" id="medida" min="0" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="peso">Peso</label>
+                            <h1 class="fs-6 text">(en Kilogramos)</h1>
+                            <input type="number" class="form-control " id="peso" min="0">
+                        </div>
 
+                        <button id="calcular" type="button" class="btn btn btn-success">Calcular</button>
+                    </form>
+                </div>
+
+                <div id="resultado" class="mb-3 bg-success-subtle text-success-emphasis">
+                    <label for="imc" class="form-label">I.M.C Resultado:</label>
+                    <input type="number" class="form-control" id="imc" min="0" aria-describedby="emailHelp">
+                </div>
             </div>
-            <div class= "mb-3">
-                <label for="peso">Peso</label>
-                <h1 class="fs-6 text">en Kilogramos</h1>
-                <input type="number" class="form-control " id="peso" min="0" >
+        </div>
+
+        <!-----------------------ejercicio Numero 2 ------------------------->
+
+        <div id="ej2conv" class="d-flex justify-content-center aling-items-center w-50 bg-info">
+            <div id="conversion" class="d-flex flex-column justify-content-center ">
+                <h2 class=" d-flex justify-content-center aling-items-center fs-4 text ">CALCULO DE CONVERSION DE TASAS</h2>
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">Peso Colombiano</span>
+                        <input type="number" class="form-control" id="pesocol">
+
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Dolar Estadounidense</span>
+                        <input type="number" class="form-control" id="dolar">
+
+                    </div>
+                
             </div>
+        </div>
 
-            <button id="calcular" type="button" class="btn btn-primary">Calcular</button>
-        </form>
     </div>
-
-    <div id="resultado" class="mb-3 d-flex-column bg-success-subtle text-success-emphasis">
-        <label for="imc" class="form-label">I.M.C Resultado</label>
-        <input type="number" class="form-control" id="imc"  min="0" aria-describedby="emailHelp">
-    </div>
-</div>
-
-
-
-
-<div class="card" style="width: 18rem;">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
-    <div class="card-footer">
-      Card footer
-    </div>
-  </div>
-
-
-
-
-
 
     <script src="/ejercicios_DOM/dom.js"></script>
 </body>
