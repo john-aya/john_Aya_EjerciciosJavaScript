@@ -37,6 +37,9 @@ border-radius: 10px;
    
 }
 
-footer{
-    background-color: rgb(181, 150, 209);
+#fondotarjetas{
+    border: solid 5px green;
+}
+#contenedorNotas{
+    border: solid 5px red;
 }

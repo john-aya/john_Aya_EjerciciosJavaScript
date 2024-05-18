@@ -24,7 +24,7 @@ const notas = [
       nuevaNota.style.height = "40vh";
   
       nuevaNota.innerHTML = `
-  <div class="card-body rounded-4">
+  <div class="card-body rounded-4 bg-dark bg-opacity-50">
       <h5 class="card-title">${NotasACrear[i].titulo}</h5>
       <input ${
           NotasACrear[i].realizada ? "checked" : ""
@@ -89,10 +89,7 @@ const notas = [
   }
 
   //....................
-  //....................
-  //....................
-
-
+ 
 // limpiar barra de Notas
 document.addEventListener('DOMContentLoaded', function(limpiar) {
   

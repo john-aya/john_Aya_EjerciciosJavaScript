@@ -12,26 +12,27 @@
 </head>
 
 <body>
-    <div class="d-flex container-fluid p-3 bg-dark w-100">
-        <div class=" container-fluid d-flex-columm justify-content-space-around aling-items-center bg-primary-subtle w-50 border border-danger">
-            <div class="d-flex justify-content-flex-start aling-items-center bg-primary-subtlebg-primary-subtle p-3">
+    <div class="d-flex container-fluid p-3 bg-dark w-100 row row-cols-1 row-cols-md-2">
+        <div
+            class=" container-fluid d-flex-columm justify-content-space-around aling-items-center bg-primary-subtle w-50 border border-danger ">
+            <div class="d-flex justify-content-flex-start aling-items-center bg-primary-subtle p-3">
                 <h1 class=" d-flex justify-content-center aling-items-center fs-3 text mt-2">Nueva nota </h1>
                 <input class="rounded-4 bg-success bg-opacity-25" type="text" id="tituloNota">
                 <textarea class="rounded-4 bg-success bg-opacity-25" id='contenidoNota'></textarea>
 
             </div>
-            <div class=" d-flex justify-content-around w-25 bg-primary-subtle mt-2 mb-3 p-1">
-                <button class=" p-1 mr-1" id='GuardarNota'>Guardar</button>
-                <button class=" p-1" id='BorrarNotaACrear'>Borrar</button>
+            <div class=" d-flex justify-content-around w-50 bg-primary-subtle mt-2 mb-3 p-1">
+                <button class=" p-1 mr-1 card-body rounded-4 bg-success" id='GuardarNota'>Guardar</button>
+                <button class=" p-1 mr-1 card-body rounded-4 bg-danger" id='BorrarNotaACrear'>Borrar</button>
 
             </div>
         </div>
 
 
-        <div class="container-fluid bg-primary-subtle w-50 border border-danger">
+        <div class="container-fluid bg-primary-subtle w-40 border border-danger">
             <div class="container pt-3">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="busqueda" id="buscar"
+                    <input class="form-control me-2 bg-dark bg-opacity-50" type="search" placeholder="busqueda" id="buscar"
                         aria-label="Search">
                 </form>
                 <div class="form-check form-switch">
@@ -41,15 +42,18 @@
             </div>
         </div>
     </div>
-    <div id="contenedorNotas" class="oncont d-flex flex-column flex-md-row container-md d-flex flex-wrap justify-content-around container-fluid link active bg-danger-subtle mt-3"
-        class="container-fluid row justify-content-around bg-warning-subtle text-dark-emphasis w-75 h-75 p-4 my-2">
 
+    <div id="fondotarjetas" class="d-flex justify-content-center bg-info">
+        <div id="contenedorNotas"
+            class="oncont d-flex flex-column flex-md-row  w-100 container-md d-flex flex-wrap justify-content-around container-fluid link active bg-danger-subtle mt-3 mb-3 row row-cols-1 row-cols-md-2 container-fluid row justify-content-around bg-warning-subtle text-dark-emphasis w-75 h-75 p-4 my-2">
+        </div>
     </div>
+
     <footer class="bg-dark bg-opacity-75 p-1 text-white justify-content-center aling-items-center">
 
         <p class="d-flex justify-content-center">John Fredy Aya H.</p>
-      </footer>
-    
+    </footer>
+
     <script src="/ejercicios_DOM/domEjercicio3.js"></script>
 </body>
 
