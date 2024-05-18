@@ -102,3 +102,12 @@ document.addEventListener('DOMContentLoaded', function(limpiar) {
       contenidoNota.value = '';
   });
 });
+
+let buscar = document.getElementById("buscar")
+
+
+buscar.addEventListener('input',(e)=>{
+  console.log(e.target.value);
+  let notasFiltradas = notas.filter(notas.titulo== e.target.value)
+  pintarTarjetas(notasFiltradas,contenidoNota)
+})
