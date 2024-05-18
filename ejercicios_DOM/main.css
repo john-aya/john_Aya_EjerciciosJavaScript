@@ -1,7 +1,7 @@
 #entradaysalida{
     border: solid 5px rgb(147, 197, 30);
     background-color: rgb(50, 160, 50);
-width: 80%;
+width: 95%;
 border-radius: 10px;
 }
 
@@ -15,10 +15,12 @@ border-radius: 10px;
 }
 #conversion{
     width: 80%;
-    border: solid 5px greenyellow;
+    
 }
 #ej2conv{
     border: solid 4px blue;
+    border-radius: 10px;
+    width: 45%;
 }
 
 #borrar{
@@ -42,4 +44,13 @@ border-radius: 10px;
 }
 #contenedorNotas{
     border: solid 5px red;
+}
+#cajappal{
+    border: solid 3px rgb(54, 23, 168);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(143, 143, 230);
 }
