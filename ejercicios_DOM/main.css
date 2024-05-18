@@ -31,3 +31,12 @@ border-radius: 10px;
     height: 36vh;
     background-color: rgb(54, 209, 67);
 }
+
+#tituloNota{
+    border: solid 5px red;
+   
+}
+
+footer{
+    background-color: rgb(181, 150, 209);
+}

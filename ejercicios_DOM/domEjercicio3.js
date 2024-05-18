@@ -16,9 +16,7 @@ const notas = [
   pintarTarjetas(notas, ContenedorDeNotas);
   
   
-  
-  
-  function pintarTarjetas(NotasACrear, ContenedorDeNotas) {
+    function pintarTarjetas(NotasACrear, ContenedorDeNotas) {
     for (let i = 0; i < NotasACrear.length; i++) {
       let nuevaNota = document.createElement("div");
       nuevaNota.classList.add("card", "rounded-4");
@@ -72,9 +70,6 @@ const notas = [
   
   }
   
-  
-  
-  
   function borrarNota(indice,notas){
    for(let i = 0; i < notas.length; i++) {
    if(notas[i] === notas[indice]){
@@ -92,3 +87,21 @@ const notas = [
       limpiarDivContenedor()
   pintarTarjetas(notas, ContenedorDeNotas);
   }
+
+  //....................
+  //....................
+  //....................
+
+
+// limpiar barra de Notas
+document.addEventListener('DOMContentLoaded', function(limpiar) {
+  
+  let tituloNota = document.getElementById('tituloNota');
+  let contenidoNota = document.getElementById('contenidoNota');
+  let BorrarNotaACrear = document.getElementById('BorrarNotaACrear');
+  
+  BorrarNotaACrear.addEventListener('click', function() {
+      tituloNota.value = '';
+      contenidoNota.value = '';
+  });
+});

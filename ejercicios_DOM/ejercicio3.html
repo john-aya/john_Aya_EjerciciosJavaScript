@@ -12,27 +12,45 @@
 </head>
 
 <body>
+    <div class="d-flex container-fluid p-3 bg-dark w-100">
+        <div class=" container-fluid d-flex-columm justify-content-space-around aling-items-center bg-primary-subtle w-50 border border-danger">
+            <div class="d-flex justify-content-flex-start aling-items-center bg-primary-subtlebg-primary-subtle p-3">
+                <h1 class=" d-flex justify-content-center aling-items-center fs-3 text mt-2">Nueva nota </h1>
+                <input class="rounded-4 bg-success bg-opacity-25" type="text" id="tituloNota">
+                <textarea class="rounded-4 bg-success bg-opacity-25" id='contenidoNota'></textarea>
+
+            </div>
+            <div class=" d-flex justify-content-around w-25 bg-primary-subtle mt-2 mb-3 p-1">
+                <button class=" p-1 mr-1" id='GuardarNota'>Guardar</button>
+                <button class=" p-1" id='BorrarNotaACrear'>Borrar</button>
+
+            </div>
+        </div>
 
 
-    <div>
-        <h1>Nueva nota </h1>
-        <input type="text" id="tituloNota">
-        <textarea id='contenidoNota'></textarea>
+        <div class="container-fluid bg-primary-subtle w-50 border border-danger">
+            <div class="container pt-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="busqueda" id="buscar"
+                        aria-label="Search">
+                </form>
+                <div class="form-check form-switch">
+                    <input class="form-check-input checked" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label mb-3" for="flexSwitchCheckDefault">Realizadas / no Realizadas</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contenedorNotas" class="oncont d-flex flex-column flex-md-row container-md d-flex flex-wrap justify-content-around container-fluid link active bg-danger-subtle mt-3"
+        class="container-fluid row justify-content-around bg-warning-subtle text-dark-emphasis w-75 h-75 p-4 my-2">
 
     </div>
-    <div>
-        <button id='GuardarNota'>Guardar</button>
-        <button id='BorrarNotaACrear'>Borrar</button>
+    <footer class="bg-dark bg-opacity-75 p-1 text-white justify-content-center aling-items-center">
 
-    </div>
-
-
-
-    <div id="contenedorNotas"
-        class="container-fluid row justify-content-around bg-dark-subtle text-dark-emphasis w-75 h-75 p-4 my-2">
-
-    </div>
+        <p class="d-flex justify-content-center">John Fredy Aya H.</p>
+      </footer>
     
     <script src="/ejercicios_DOM/domEjercicio3.js"></script>
 </body>
+
 </html>
